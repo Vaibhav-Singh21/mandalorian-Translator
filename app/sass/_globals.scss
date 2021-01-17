@@ -14,8 +14,96 @@ body {
     font-family: 'Public sans', sans-serif;
     line-height: 1.3;
     font-size: 1.125rem;
-    color:  hsl(233, 8%,62%);
+    color:  #9698a6;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
 }
+.form{
+    width: 50%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    
+    input{
+        width: 100%;
+        height: 100%;
+        font-size: medium;
+        padding-top: 20px; 
+        border: none;
+        outline: none;
+
+    }
+    label{
+        position:absolute;
+        bottom: 0px;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-bottom: solid #e8e8e8;
+    }
+    label::after{
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        height: 100%;
+        width: 100%;
+        border-bottom: 3px solid  #2bb7da;
+        transform: translate(-100%);
+        transition: transform all 0.3s ease;
+
+    }
+    .content-name {
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        transition: all 0.3s ease;
+    }
+    input:focus + .label-name .content-name, 
+    input:valid + .label-name .content-name{
+        transform: translateY(-100%);
+        font-size: 14px;
+        color: #9698a6;
+    }
+    input:focus+ .label-name::after,
+    input:valid + .label-name::after{
+        transform: translateX(0%);
+
+    }
+}
+
+//output textarea
+.outputDiv{
+    width: 50%;
+    position: relative;
+    height: 50px;
+    input{
+        width: 100%;
+        height: 100%;
+        font-size: medium;
+        padding: 5px;
+        border: none;
+        outline: none;
+        
+    }
+    label{
+        position: absolute;
+        bottom: 0px;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        border-bottom: solid #9698a6;
+
+    }
+
+}
+
+
 a, a:visited, a:hover {
     text-decoration: none;
     color:  hsl(233, 8%,62%);
@@ -39,3 +127,17 @@ a, a:visited, a:hover {
 
 }
 
+
+.translateBtn{
+    .button{
+        padding: 1rem 1.875rem;
+        background: linear-gradient(to right, #31d35c, #2bb7da);
+        border: 0;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+
+
+    }
+}

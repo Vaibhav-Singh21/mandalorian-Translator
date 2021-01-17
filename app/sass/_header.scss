@@ -9,22 +9,5 @@
 
     }
 
-    &__menu{
-        //mobileView
-
-        > span{
-            display:block;
-            width: 26px;
-            height: 2px;
-            background-color: $darkBlue;
-
-            &:not(:last-child){
-                margin-bottom: 3px ;
-            }
-        }
-    }
-
-    &__links{
-        font-size: $font-sm;
-    }
+    
 }

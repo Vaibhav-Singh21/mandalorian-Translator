@@ -14,20 +14,32 @@
             <a href="#" class="header__logo">
                 <h1>Mandalorian Translator</h1>
             </a>
-
-            <a href="#" class="header__menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-
-            <div class="header__links">
-                <a href="#">About Me</a>
-                <a href="#">My Portfolio</a>
-                <a href="#">Blogs</a>
+            <div class="logo">
+                <span>
+                    <img src="./app/images/mandalorianLogo.png" alt="logo" style="height: 10rem;
+                    width: 10rem;">
+                </span>
             </div>
         </nav>
     </header>
+
+    <div class="form">
+        <input id="inputText" type="text" name="name" autocomplete="off" required/>
+        <label for="name" class="label-name">
+            <span class="content-name">Type your Message here</span>
+        </label>
+    </div>
+    <div class="translateBtn">
+        <a class="button">Translate</button>
+    </div>
+
+    <div class="outputDiv">
+        <input id="outputText" name="name" type="text"/>
+        <label for="name" class="label-name">
+            <span class="content-name">Mandalorian Message</span>
+        </label>
+    </div>
+
     <script src="./app/js/script.js"></script>
 </body>
 </html>
