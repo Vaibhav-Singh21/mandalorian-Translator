@@ -3,6 +3,7 @@ var translateBtn = document.querySelector(".button");
 var outputMsg = document.querySelector(".outputText");
 
 var serverURL = "https://api.funtranslations.com/translate/mandalorian.json" ;
+// var serverURL = "https://api.funtranslations.com/translate/yoda.json" ;
 
 function getTranslationURL(text) {
     return serverURL + "?" + "text=" + text;
